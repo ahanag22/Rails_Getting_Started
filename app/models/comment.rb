@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-  belongs_to :article
-  belongs_to :photo
+  belongs_to :article , polymorphic: true
+  belongs_to :photo , polymorphic: true
 end
